@@ -95,3 +95,6 @@ Now click on Pull Request, enter a title for the set of changes, and some explan
 * ## Revise and push as necessary
 
 You may be asked to make changes in the discussion of the pull request. Make those changes in your local copy, commit them to your local repo and push them to GitHub. GitHub will automatically update your pull request.
+
+## Where to contribute?
+Not sure what your first contribution should be? The best place to look for is in Issues. For beginners, look for issues with labels such as`Help wanted` or `Good first issue`. If you are new to the git workflow of development, documentation related contributions can be a good place to start. And above all, the developers are friendly and want you to help, so don’t be shy about asking questions!!
