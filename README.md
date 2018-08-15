@@ -1,5 +1,5 @@
 # Contributing to Repositories in Source-aasf
-So you're interested in contributing Source-aasf? Excellent, we love your input! We want to make contributing to projects as easy and transparent as possible, whether it's:
+So you're interested in contributing to Source-aasf? Excellent! We appreciate your invaluable input! We want to make contributing to our projects as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
@@ -22,12 +22,14 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 ## Essential git commands
 A full git tutorial is beyond the scope of this document but this list describes the few git commands you are likely to encounter while contributing:
 
-- `git fetch` gets the latest development version of Astropy, which you will use as the basis for making your changes.
-- `git branch` makes a logically separate copy of Astropy to keep track of your changes.
+- `git clone` makes a local copy of the project from GitHub on your system.
+- `git fetch` gets the latest development version of the project, which you will use as the basis for making your changes.
+- `git status` to see a list of files that have been modified or created.
+- `git branch` makes a logically separate copy of the project to keep track of your changes.
 - `git add` stages files you have changed or created for addition to git.
 - `git commit` adds your staged changes to the repository.
-- `git push` copies the changes you committed to GitHub
-- `git status` to see a list of files that have been modified or created.
+- `git push` copies the changes you committed on your clone to GitHub.
+
 
 ## Workflow Overview
 
@@ -37,13 +39,13 @@ These, conceptually, are the steps you will follow in contributing to repositori
 - Make a new feature branch; you will make your changes on this branch.
 - Follow The editing workflow to write/edit/document/test code - make frequent, small commits.
 - Push changes to feature branch on your fork.
-- From GitHub, Ask for your changes to be reviewed to let the maintainers know you have contributions to review.
+- From GitHub, ask for your changes to be reviewed to let the maintainers know you have contributions to review.
 - Make a pull request from GitHub.
 - Revise and push as necessary in response to comments on the pull request. Pushing those changes to GitHub automatically updates the pull request.
 
 ## Detailed Workflow
 * ## Fork a repository and clone it locally.
-Suppose you are interested in contributing to `my-project` repository on source-aasf. When you fork it, you will have the repoisitory as 'your-github-username/myproject'
+Suppose you are interested in contributing to `my-project` repository on source-aasf. When you fork it, you will have the repository as 'your-github-username/myproject'
 To clone this locally, in your terminal window, run
 ```bash
 git clone https://github.com/your-github-username/my-project.git
@@ -69,7 +71,7 @@ When you are ready to make some changes to the code, you should start a new bran
 Making a new branch for each set of related changes will make it easier for someone reviewing your branch to see what you are doing.
 
 Choose an informative name for the branch to remind yourself and the rest of us what the changes in the branch are for. Branch names like add-ability-to-fly or buxfix-for-issue-42 clearly describe the purpose of the branch.
-Always make your branch from my-project/master so that you are basing your changes on the latest version of the repository.
+*Always make your branch from my-project/master so that you are basing your changes on the latest version of the repository*.
 ```bash
 # Update the mirror of trunk
 git fetch astropy
@@ -81,15 +83,15 @@ git checkout my-new-feature
 
 * ## Make changes to the code.
 Then, to stage these changes run
-`git add .` if you want to add all changed files or `git add <file_names>` if you want to add specific files
-Then commit your changes with a meaning full message
+`git add .` if you want to add all changed files or `git add <file_names>` if you want to add specific files to the staging area.
+Then commit your changes with a meaningfull message
 `git commit -m "added new feature"`
-and then push these changes to your fork
+and then push these changes to your fork.
 `git push origin my-new-feature`
 
 * ## Make a pull request
-On GitHub, on your forked repo, switch your branch from dropdown menu to my-new-feature
-You will see the message of how many commits your branch is ahead of upstream/master
+On GitHub, on your forked repo, switch your branch from dropdown menu to my-new-feature.
+You will see the message of how many commits your branch is ahead of upstream/master.
 Now click on Pull Request, enter a title for the set of changes, and some explanation of what you’ve done. If there is anything you’d like particular attention for, like a complicated change or some code you are not happy with, add the details here.
 
 * ## Revise and push as necessary
