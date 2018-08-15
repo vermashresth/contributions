@@ -74,17 +74,17 @@ Choose an informative name for the branch to remind yourself and the rest of us 
 *Always make your branch from my-project/master so that you are basing your changes on the latest version of the repository*.
 ```bash
 # Update the mirror of trunk
-git fetch astropy
+git fetch my-project
 
-# Make new feature branch starting at astropy/master
-git branch my-new-feature astropy/master
+# Make new feature branch starting at my-project/master
+git branch my-new-feature my-project/master
 git checkout my-new-feature
 ```
 
 * ## Make changes to the code.
 Then, to stage these changes run
 `git add .` if you want to add all changed files or `git add <file_names>` if you want to add specific files to the staging area.
-Then commit your changes with a meaningfull message
+Then commit your changes with a meaningful message
 `git commit -m "added new feature"`
 and then push these changes to your fork.
 `git push origin my-new-feature`
